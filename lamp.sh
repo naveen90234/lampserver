@@ -26,7 +26,7 @@ echo 'phpmyadmin phpmyadmin/app-password-confirm password root' | sudo debconf-s
 echo 'phpmyadmin phpmyadmin/mysql/admin-pass password root' | sudo debconf-set-selections
 echo 'phpmyadmin phpmyadmin/mysql/app-pass password root' | sudo debconf-set-selections
 echo 'phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2' | sudo debconf-set-selections
-sudo apt install -y phpmyadmin
+sudo apt install -y phpmyadmin --no-install-recommends
 
 # Enable the phpMyAdmin Apache configuration
 sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
