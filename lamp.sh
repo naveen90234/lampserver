@@ -15,7 +15,7 @@ sudo apt install -y mysql-server
 # Install PHP and required modules
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
-sudo apt-get install -y php8.2 php8.2-cli php8.2-common php8.2-fpm php8.2-mysql php8.2-zip php8.2-gd php8.2-mbstring php8.2-curl php8.2-xml php8.2-bcmath --no-install-recommends
+sudo apt-get install -y php8.2 php8.2-cli php8.2-common php8.2-fpm php8.2-mysql php8.2-zip php8.2-gd php8.2-mbstring php8.2-curl php8.2-xml php8.2-bcmath libapache2-mod-php8.2 --no-install-recommends
 
 # Restart Apache to apply changes
 sudo systemctl restart apache2
